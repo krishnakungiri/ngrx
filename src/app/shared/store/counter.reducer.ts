@@ -8,6 +8,8 @@ import { initialState } from './counter.state';
 const _counterReducer = createReducer(
     initialState,
     on(increment, (state) => {
+        console.log("calling");
+
         return {
             ...state,
             counter: state.counter + 1
@@ -22,7 +24,7 @@ const _counterReducer = createReducer(
     on(reset, (state) => {
         return {
             ...state,
-            counter: state.counter
+            counter: initialState.counter
         }
     })
 

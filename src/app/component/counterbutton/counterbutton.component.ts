@@ -4,8 +4,8 @@ import { decrement, increment, reset } from '../../shared/store/counter.actions'
 
 @Component({
   selector: 'app-counterbutton',
-  // standalone: true,
-  // imports: [],
+  standalone: true,
+  imports: [],
   templateUrl: './counterbutton.component.html',
   styleUrl: './counterbutton.component.css'
 })
